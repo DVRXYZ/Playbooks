@@ -2,6 +2,7 @@
 - name: Install packages on Ubuntu Server
   hosts: Test Inventory
   become: true
+  become_method: sudo
   tasks:
     - name: Install curl, gnupg2, software-properties-common, apt-transport-https, ca-certificates
       apt:
