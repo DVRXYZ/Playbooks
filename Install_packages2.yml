@@ -1,6 +1,6 @@
 ---
 - name: Install packages on Ubuntu Server
-  hosts: TestInventory
+  hosts: all
   become: true
   become_method: sudo
   tasks:
