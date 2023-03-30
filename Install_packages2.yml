@@ -1,1 +1,13 @@
-
+---
+- name: Install packages on Ubuntu Server
+  become: true
+  tasks:
+    - name: Install curl, gnupg2, software-properties-common, apt-transport-https, ca-certificates
+      apt:
+        name:
+          - curl
+          - gnupg2
+          - software-properties-common
+          - apt-transport-https
+          - ca-certificates
+        state: present
