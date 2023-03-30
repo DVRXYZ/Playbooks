@@ -1,5 +1,6 @@
 ---
 - name: Install packages on Ubuntu Server
+  hosts: all
   become: true
   tasks:
     - name: Install curl, gnupg2, software-properties-common, apt-transport-https, ca-certificates
