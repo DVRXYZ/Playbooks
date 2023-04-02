@@ -3,5 +3,5 @@
   tasks:
     - name: "Configure hostname"
       ansible.builtin.hostname:
-        name: "frikandel"
+        name: "kip"
       become: true
