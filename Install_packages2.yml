@@ -5,6 +5,12 @@
   become_method: sudo
   become_user: ansibleaccount
   tasks:
+    - name: Ensure /var/lib/apt exists and is writable
+      become: true
+      file:
+        path: /var/lib/apt
+        state: directory
+        mode: '0755'
     - name: Install curl, gnupg2, software-properties-common, apt-transport-https, ca-certificates
       apt:
         name:
