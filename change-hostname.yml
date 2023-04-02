@@ -1,0 +1,7 @@
+- name: Change hostname
+  hosts: all
+  tasks:
+    - name: "Configure hostname"
+      ansible.builtin.hostname:
+        name: "frikandel"
+      become: true
