@@ -1,0 +1,13 @@
+---
+vcenter_hostname: "192.168.200.24"
+vcenter_username: "i518410@fhict.local"
+vcenter_password: "Ewn7ZiPVcq"
+vcenter_validate_certs: false
+vcenter_datacenter: "Netlab-DC"
+vcenter_cluster: "NETLAB-Cluster"
+vm_name: "i518410TestFromTemplate"
+vcenter_resource_pool: "i518410"
+vm_disk_datastore_cluster: "DataCluster-Students"
+vcenter_destination_folder: "/Netlab-DC/vm/_Courses/O-A-ICT301/i518410"
+vm_state: "poweredoff"
+vm_template: "i518410-Template-UbuntuLeeg"
